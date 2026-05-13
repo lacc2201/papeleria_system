@@ -1,0 +1,115 @@
+body {
+    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background: #111827;
+}
+
+/* LINKS */
+
+.sidebar-link {
+    display: block;
+    text-decoration: none;
+    color: #d1d5db;
+    padding: 14px 16px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.sidebar-link:hover {
+    background: #1f2937;
+    color: white;
+}
+
+/* TARJETAS */
+
+.card {
+    border: none;
+    border-radius: 20px;
+}
+
+/* BOTONES */
+
+.btn {
+    border-radius: 12px;
+}
+
+/* INPUTS */
+
+.form-control,
+.form-select {
+    border-radius: 12px;
+    min-height: 50px;
+}
+
+/* TABLAS */
+
+.table {
+    min-width: 700px;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+/* IMÁGENES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* DASHBOARD */
+
+.dashboard-card {
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .content {
+        width: 100%;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .btn-lg {
+        font-size: 16px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    .card-body {
+        padding: 18px;
+    }
+
+}

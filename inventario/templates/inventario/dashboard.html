@@ -1,0 +1,64 @@
+{% extends 'inventario/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+
+        <div>
+            <h1 class="fw-bold mb-1">
+                Dashboard
+            </h1>
+
+            <p class="text-muted mb-0">
+                Bienvenida al sistema de inventario
+            </p>
+        </div>
+
+        <div>
+            <a href="{% url 'crear_producto' %}" class="btn btn-primary btn-lg shadow-sm">
+                + Nuevo Producto
+            </a>
+        </div>
+
+    </div>
+
+    <!-- TARJETAS -->
+
+    <div class="row g-4 mb-4">
+
+        <div class="col-md-4">
+
+            <div class="card border-0 shadow-lg h-100 dashboard-card">
+
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <div>
+                            <p class="text-muted mb-2">
+                                Productos
+                            </p>
+
+                            <h2 class="fw-bold">
+                                {{ total_productos }}
+                            </h2>
+                        </div>
+
+                        <div class="dashboard-icon bg-primary-subtle">
+                            📦
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+{% endblock %}
