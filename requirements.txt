@@ -3,3 +3,4 @@ gunicorn
 whitenoise
 pillow
 django-crispy-forms
+dj_database_url
