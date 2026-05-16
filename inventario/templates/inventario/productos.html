@@ -69,6 +69,7 @@
                             <th>Stock</th>
                             <th>Venta</th>
                             <th>Ganancia</th>
+                            <th>Total Stock</th>
                             <th>Acciones</th>
 
                         </tr>
@@ -224,6 +225,17 @@
                                 <span class="text-success fw-bold">
 
                                     + ${{ producto.ganancia|floatformat:0 }}
+
+                                </span>
+
+                            </td>
+                            <!-- TOTAL STOCK -->
+
+                            <td>
+
+                                <span class="fw-bold text-primary">
+
+                                    ${{ producto.total_stock|floatformat:0 }}
 
                                 </span>
 

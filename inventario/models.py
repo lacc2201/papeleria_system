@@ -42,6 +42,9 @@ class Producto(models.Model):
 
     def stock_bajo(self):
         return self.cantidad <= 5
+    
+    def total_stock(self):
+        return self.precio_venta * self.cantidad
 
     def __str__(self):
         return self.nombre
