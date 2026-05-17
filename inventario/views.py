@@ -34,9 +34,14 @@ def productos(request):
 
     productos = Producto.objects.all().order_by('-id')
 
+    # BUSCADOR
     if query:
+
         productos = productos.filter(
-            Q(nombre__icontains=query)
+
+            Q(nombre__icontains=query) |
+            Q(categoria__nombre__icontains=query)
+
         )
 
     # PAGINADOR
@@ -46,11 +51,13 @@ def productos(request):
 
     productos = paginator.get_page(page)
 
-    return render(request,
-                  'inventario/productos.html',
-                  {
-                      'productos': productos
-                  })
+    return render(
+        request,
+        'inventario/productos.html',
+        {
+            'productos': productos
+        }
+    )
 
 
 @login_required

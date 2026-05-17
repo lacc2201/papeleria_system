@@ -2,6 +2,7 @@ from django.db import models
 from decimal import Decimal
 
 
+
 class Categoria(models.Model):
 
     nombre = models.CharField(max_length=100)
